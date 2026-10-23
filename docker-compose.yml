@@ -1,0 +1,7 @@
+services:
+  rabbitmq:
+    image: rabbitmq:4-management
+    container_name: rabbit
+    ports:
+      - "5672:5672"     # AMQP: сюда подключаются наши скрипты
+      - "15672:15672"   # веб-интерфейс управления
